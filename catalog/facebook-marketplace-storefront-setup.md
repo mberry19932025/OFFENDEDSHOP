@@ -16,7 +16,8 @@ This repo includes a starter catalog feed you can import into Meta Commerce Mana
 3. Add items via **Data Feed** and upload the CSV from this repo.
 
 When your site is live, you can also host the CSV at a public URL (ex:
-`https://offendhop.com/catalog/offendhop-facebook-marketplace-catalog.csv`) and schedule refreshes.
+`https://mberry19932025.github.io/OFFENDEDSHOP/catalog/offendhop-facebook-marketplace-catalog.csv`)
+and schedule refreshes.
 
 ## 3) Create the storefront (Shop) and connect channels
 
@@ -26,14 +27,17 @@ When your site is live, you can also host the CSV at a public URL (ex:
    - **Checkout on Facebook/Instagram** (if available for your account/region).
 3. Connect sales channels you want (Facebook Page, Instagram, Marketplace if available).
 
-## 4) Replace placeholders (required before going live)
+## 4) Confirm your public URLs (required before going live)
 
-Edit the CSV and replace:
+The CSV includes URLs that must be reachable over public HTTPS:
 
-- `link`: your real product page URL per item.
-- `image_link`: a real, public product image URL per item.
+- `link`: your product page URL (or a single shop URL if you don’t have product pages yet).
+- `image_link`: a public product image URL per item.
 
-The current `offendhop.com` links are placeholders so the file is importable.
+This repo’s starter CSV is pre-wired for GitHub Pages under
+`https://mberry19932025.github.io/OFFENDEDSHOP/`. If you move to a custom domain or
+different host, bulk-replace the base URL in `link` and `image_link`, then re-upload
+or refresh the feed.
 
 ## 5) Upload visuals (optional, but recommended)
 
