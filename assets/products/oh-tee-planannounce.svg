@@ -51,80 +51,103 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#3b82f6"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">DEMOCRATS</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#3b82f6"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#3b82f6"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="clipboard"
     >
       <rect
-            x="-53.46"
-            y="-68.03999999999999"
-            width="106.92"
-            height="136.07999999999998"
-            rx="19.439999999999998"
+            x="-27.060000000000002"
+            y="-34.44"
+            width="54.120000000000005"
+            height="68.88"
+            rx="9.84"
             fill="none"
             stroke="#3b82f6"
-            stroke-width="11"
+            stroke-width="6"
           />
           <rect
-            x="-22.680000000000003"
-            y="-72.41399999999999"
-            width="45.36000000000001"
-            height="29.16"
-            rx="16.038"
+            x="-11.48"
+            y="-36.653999999999996"
+            width="22.96"
+            height="14.76"
+            rx="8.118"
             fill="#3b82f633"
             stroke="#3b82f6"
-            stroke-width="8"
+            stroke-width="4"
             opacity="0.92"
           />
           <path
-            d="M-36.3528 -21.772799999999997 H 36.352799999999995"
+            d="M-18.400800000000004 -11.020799999999998 H 18.400799999999997"
             fill="none"
             stroke="#3b82f6"
-            stroke-width="7"
+            stroke-width="4"
             stroke-linecap="round"
             opacity="0.85"
           />
           <path
-            d="M-36.3528 2.721599999999995 H 29.93760000000001"
+            d="M-18.400800000000004 1.377600000000001 H 15.153600000000004"
             fill="none"
             stroke="#3b82f6"
-            stroke-width="7"
+            stroke-width="4"
             stroke-linecap="round"
             opacity="0.85"
           />
           <path
-            d="M-36.3528 27.215999999999994 H 23.522399999999998"
+            d="M-18.400800000000004 13.775999999999996 H 11.906399999999998"
             fill="none"
             stroke="#3b82f6"
-            stroke-width="7"
+            stroke-width="4"
             stroke-linecap="round"
             opacity="0.85"
           />
@@ -132,15 +155,15 @@
     </g>
 <text
       x="600"
-      y="573.5"
+      y="555"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="74"
+      font-size="52"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
-      <tspan x="600" dy="0">WE HAVE A PLAN</tspan><tspan x="600" dy="65">TO ANNOUNCE A PLAN</tspan>
+      <tspan x="600" dy="0">WE HAVE A PLAN</tspan><tspan x="600" dy="46">TO ANNOUNCE A PLAN</tspan>
     </text>
     </g>
   </g>

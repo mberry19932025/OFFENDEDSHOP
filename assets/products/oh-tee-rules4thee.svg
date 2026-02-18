@@ -51,84 +51,107 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#f97316"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">REPUBLICANS</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#f97316"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#f97316"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="rulebook"
     >
       <rect
-            x="-66.42"
-            y="-50.22"
-            width="132.84"
-            height="100.44"
-            rx="19.439999999999998"
+            x="-33.62"
+            y="-25.419999999999998"
+            width="67.24"
+            height="50.839999999999996"
+            rx="9.84"
             fill="none"
             stroke="#f97316"
-            stroke-width="11"
+            stroke-width="6"
           />
           <path
-            d="M0 -50.22 V 50.22"
+            d="M0 -25.419999999999998 V 25.419999999999998"
             fill="none"
             stroke="#f97316"
-            stroke-width="7"
+            stroke-width="4"
             opacity="0.85"
           />
           <path
-            d="M-45.165600000000005 -18.0792 H -7.9704"
+            d="M-22.8616 -9.1512 H -4.0344"
             fill="none"
             stroke="#f97316"
-            stroke-width="7"
+            stroke-width="4"
             stroke-linecap="round"
             opacity="0.85"
           />
           <path
-            d="M-45.165600000000005 0 H -15.9408"
+            d="M-22.8616 0 H -8.0688"
             fill="none"
             stroke="#f97316"
-            stroke-width="7"
+            stroke-width="4"
             stroke-linecap="round"
             opacity="0.85"
           />
           <path
-            d="M7.9704 -18.0792 H 45.165600000000005"
+            d="M4.0344 -9.1512 H 22.8616"
             fill="none"
             stroke="#f97316"
-            stroke-width="7"
+            stroke-width="4"
             stroke-linecap="round"
             opacity="0.85"
           />
           <path
-            d="M15.9408 0 H 45.165600000000005"
+            d="M8.0688 0 H 22.8616"
             fill="none"
             stroke="#f97316"
-            stroke-width="7"
+            stroke-width="4"
             stroke-linecap="round"
             opacity="0.85"
           />
@@ -136,15 +159,15 @@
     </g>
 <text
       x="600"
-      y="573.5"
+      y="555"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="74"
+      font-size="52"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
-      <tspan x="600" dy="0">FREEDOM FOR ME</tspan><tspan x="600" dy="65">RULES FOR THEE</tspan>
+      <tspan x="600" dy="0">FREEDOM FOR ME</tspan><tspan x="600" dy="46">RULES FOR THEE</tspan>
     </text>
     </g>
   </g>

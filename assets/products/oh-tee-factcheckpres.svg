@@ -51,55 +51,78 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#8b5cf6"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">FACT CHECKING</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#8b5cf6"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#8b5cf6"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="checkStamp"
     >
       <rect
-            x="-63.18"
-            y="-50.22"
-            width="126.36"
-            height="100.44"
-            rx="19.439999999999998"
+            x="-31.98"
+            y="-25.419999999999998"
+            width="63.96"
+            height="50.839999999999996"
+            rx="9.84"
             fill="none"
             stroke="#8b5cf6"
-            stroke-width="11"
-            stroke-dasharray="13.2 9.9"
+            stroke-width="6"
+            stroke-dasharray="7.199999999999999 5.4"
             opacity="0.9"
           />
           <path
-            d="M-35.64 3.24 L -9.719999999999999 29.16 L 42.120000000000005 -25.92"
+            d="M-18.04 1.6400000000000001 L -4.92 14.76 L 21.32 -13.120000000000001"
             fill="none"
             stroke="#8b5cf6"
-            stroke-width="11"
+            stroke-width="6"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
@@ -107,10 +130,10 @@
     </g>
 <text
       x="600"
-      y="606"
+      y="578"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"

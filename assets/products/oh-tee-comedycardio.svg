@@ -51,64 +51,87 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#a855f7"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">COMEDY IS MY</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#a855f7"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#a855f7"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="heartMic"
     >
       <path
-            d="M0 25.92
-               C 53.46 -4.05, 35.64 -53.46, 0 -27.540000000000003
-               C -35.64 -53.46, -53.46 -4.05, 0 25.92 Z"
+            d="M0 13.120000000000001
+               C 27.060000000000002 -2.0500000000000003, 18.04 -27.060000000000002, 0 -13.940000000000001
+               C -18.04 -27.060000000000002, -27.060000000000002 -2.0500000000000003, 0 13.120000000000001 Z"
             fill="#a855f733"
             stroke="#a855f7"
-            stroke-width="9"
+            stroke-width="5"
             stroke-linejoin="round"
           />
         
           <rect
-            x="-17.82"
-            y="-37.260000000000005"
-            width="35.64"
-            height="55.080000000000005"
-            rx="17.82"
+            x="-9.02"
+            y="-18.86"
+            width="18.04"
+            height="27.880000000000003"
+            rx="9.02"
             fill="none"
             stroke="#a855f7"
-            stroke-width="8"
+            stroke-width="5"
             opacity="0.9"
           />
           <path
-            d="M0 19.439999999999998 V 55.080000000000005"
+            d="M0 9.84 V 27.880000000000003"
             fill="none"
             stroke="#a855f7"
-            stroke-width="7"
+            stroke-width="4"
             stroke-linecap="round"
             opacity="0.9"
           />
@@ -116,10 +139,10 @@
     </g>
 <text
       x="600"
-      y="606"
+      y="578"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"

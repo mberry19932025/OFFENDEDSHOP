@@ -51,66 +51,89 @@
     />
     <rect x="470" y="592" width="260" height="112" rx="56" fill="rgba(0,0,0,0.16)" opacity="0.55" />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="405"
+      y="335"
+      width="390"
+      height="350"
+      rx="38.5"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="415"
+      y="345"
+      width="370"
+      height="330"
+      rx="30.5"
+      fill="none"
+      stroke="#f59e0b"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="272.5"
+      y="405"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="74"
+      font-size="52"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
-      <tspan x="600" dy="0">THOUGHTS</tspan><tspan x="600" dy="65">&amp; PRAYERS</tspan>
+      <tspan x="600" dy="0">THOUGHTS</tspan><tspan x="600" dy="46">&amp; PRAYERS</tspan>
     </text>
-<g transform="translate(600 455)" filter="url(#printShadow)">
+<g transform="translate(600 508)" filter="url(#printShadow)">
       <rect
-      x="-125"
-      y="-125"
-      width="250"
-      height="250"
-      rx="45"
+      x="-72"
+      y="-72"
+      width="144"
+      height="144"
+      rx="25.919999999999998"
       fill="rgba(0,0,0,0.28)"
       stroke="#f59e0b"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#f59e0b"
-      stroke-width="12"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="hourglass"
     >
       <path
-            d="M-47.6 -64.6 H 47.6 Q 0 -20.4 -47.6 0 Q 0 20.4 47.6 64.6 H -47.6 Q 0 20.4 47.6 0 Q 0 -20.4 -47.6 -64.6 Z"
+            d="M-23.520000000000003 -31.92 H 23.520000000000003 Q 0 -10.08 -23.520000000000003 0 Q 0 10.08 23.520000000000003 31.92 H -23.520000000000003 Q 0 10.08 23.520000000000003 0 Q 0 -10.08 -23.520000000000003 -31.92 Z"
             fill="none"
             stroke="#f59e0b"
-            stroke-width="12"
+            stroke-width="6"
             stroke-linejoin="round"
           />
           <path
-            d="M-20.944 -44.199999999999996 L 20.944 -44.199999999999996 L 0 -6.8 Z"
+            d="M-10.3488 -21.840000000000003 L 10.3488 -21.840000000000003 L 0 -3.36 Z"
             fill="#f59e0b33"
           />
           <path
-            d="M-17.136 44.199999999999996 L 17.136 44.199999999999996 L 0 20.4 Z"
+            d="M-8.4672 21.840000000000003 L 8.4672 21.840000000000003 L 0 10.08 Z"
             fill="#f59e0b33"
           />
     </g>
     </g>
 <text
       x="600"
-      y="579.5"
+      y="567"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="74"
+      font-size="52"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
-      <tspan x="600" dy="0">PENDING</tspan><tspan x="600" dy="65">APPROVAL</tspan>
+      <tspan x="600" dy="0">PENDING</tspan><tspan x="600" dy="46">APPROVAL</tspan>
     </text>
     </g>
   </g>

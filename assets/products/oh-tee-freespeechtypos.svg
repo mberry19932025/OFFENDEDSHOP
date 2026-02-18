@@ -51,67 +51,90 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#06b6d4"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">FREE SPEECH,</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#06b6d4"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#06b6d4"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="megaphonePencil"
     >
       <path
-            d="M-50.22 -27.540000000000003 L 50.22 0 L -50.22 27.540000000000003 Z"
+            d="M-25.419999999999998 -13.940000000000001 L 25.419999999999998 0 L -25.419999999999998 13.940000000000001 Z"
             fill="#06b6d433"
             stroke="#06b6d4"
-            stroke-width="11"
+            stroke-width="6"
             stroke-linejoin="round"
           />
           <rect
-            x="-63.18"
-            y="-12.117600000000001"
-            width="25.92"
-            height="24.235200000000003"
-            rx="9.719999999999999"
+            x="-31.979999999999997"
+            y="-6.1336"
+            width="13.120000000000001"
+            height="12.2672"
+            rx="4.92"
             fill="none"
             stroke="#06b6d4"
-            stroke-width="7"
+            stroke-width="4"
           />
           <path
-            d="M-6.48 30.78 L 30.78 1.62"
+            d="M-3.2800000000000002 15.58 L 15.58 0.8200000000000001"
             fill="none"
             stroke="#06b6d4"
-            stroke-width="8"
+            stroke-width="5"
             stroke-linecap="round"
           />
           <path
-            d="M22.680000000000003 9.719999999999999 L 35.64 -3.24"
+            d="M11.48 4.92 L 18.04 -1.6400000000000001"
             fill="none"
             stroke="#06b6d4"
-            stroke-width="6"
+            stroke-width="4"
             opacity="0.9"
             stroke-linecap="round"
           />
@@ -119,10 +142,10 @@
     </g>
 <text
       x="600"
-      y="606"
+      y="578"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"

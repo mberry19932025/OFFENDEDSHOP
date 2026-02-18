@@ -51,82 +51,105 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#3b82f6"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">WHEN IN DOUBT,</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#3b82f6"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#3b82f6"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="micWhip"
     >
       <rect
-            x="-27.540000000000003"
-            y="-63.18"
-            width="55.080000000000005"
-            height="71.28"
-            rx="27.540000000000003"
+            x="-13.940000000000001"
+            y="-31.98"
+            width="27.880000000000003"
+            height="36.08"
+            rx="13.940000000000001"
             fill="#3b82f633"
             stroke="#3b82f6"
-            stroke-width="11"
+            stroke-width="6"
           />
           <rect
-            x="-27.540000000000003"
-            y="-22.680000000000003"
-            width="55.080000000000005"
-            height="35.64"
-            rx="19.278000000000002"
+            x="-13.940000000000001"
+            y="-11.48"
+            width="27.880000000000003"
+            height="18.04"
+            rx="9.758000000000001"
             fill="none"
             stroke="#3b82f6"
-            stroke-width="11"
+            stroke-width="6"
           />
           <path
-            d="M0 4.05 V 37.260000000000005"
+            d="M0 2.0500000000000003 V 18.86"
             fill="none"
             stroke="#3b82f6"
-            stroke-width="11"
+            stroke-width="6"
             stroke-linecap="round"
           />
           <path
-            d="M0 37.260000000000005 C 9.719999999999999 46.98, 27.540000000000003 37.260000000000005, 22.680000000000003 22.680000000000003
-               S 1.62 4.05, 17.82 -3.24"
+            d="M0 18.86 C 4.92 23.779999999999998, 13.940000000000001 18.86, 11.48 11.48
+               S 0.8200000000000001 2.0500000000000003, 9.02 -1.6400000000000001"
             fill="none"
             stroke="#3b82f6"
-            stroke-width="8"
+            stroke-width="4"
             stroke-linecap="round"
           />
-          <circle cx="17.82" cy="-3.24" r="3" fill="#3b82f6" opacity="0.9" />
+          <circle cx="9.02" cy="-1.6400000000000001" r="3" fill="#3b82f6" opacity="0.9" />
     </g>
     </g>
 <text
       x="600"
-      y="606"
+      y="578"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"

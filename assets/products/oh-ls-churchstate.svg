@@ -67,100 +67,123 @@
       opacity="0.22"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#60a5fa"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">SEPARATION OF</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#60a5fa"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#60a5fa"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="scale"
     >
       <path
-            d="M0 -50.22 V 42.120000000000005"
+            d="M0 -25.419999999999998 V 21.32"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="11"
+            stroke-width="6"
             stroke-linecap="round"
           />
           <path
-            d="M-37.260000000000005 -25.92 H 37.260000000000005"
+            d="M-18.86 -13.120000000000001 H 18.86"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="11"
+            stroke-width="6"
             stroke-linecap="round"
           />
           <path
-            d="M-25.92 -25.92 L -35.64 8.1"
+            d="M-13.120000000000001 -13.120000000000001 L -18.04 4.1000000000000005"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="8"
+            stroke-width="5"
             stroke-linecap="round"
           />
           <path
-            d="M25.92 -25.92 L 35.64 8.1"
+            d="M13.120000000000001 -13.120000000000001 L 18.04 4.1000000000000005"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="8"
+            stroke-width="5"
             stroke-linecap="round"
           />
           <path
-            d="M-45.36000000000001 9.719999999999999 Q -35.64 25.92 -25.92 9.719999999999999"
+            d="M-22.96 4.92 Q -18.04 13.120000000000001 -13.120000000000001 4.92"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="8"
+            stroke-width="5"
             stroke-linecap="round"
           />
           <path
-            d="M25.92 9.719999999999999 Q 35.64 25.92 45.36000000000001 9.719999999999999"
+            d="M13.120000000000001 4.92 Q 18.04 13.120000000000001 22.96 4.92"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="8"
+            stroke-width="5"
             stroke-linecap="round"
           />
           <path
-            d="M-14.58 42.120000000000005 H 14.58"
+            d="M-7.38 21.32 H 7.38"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="11"
+            stroke-width="6"
             stroke-linecap="round"
           />
     </g>
     </g>
 <text
       x="600"
-      y="573.5"
+      y="555"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="74"
+      font-size="52"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
-      <tspan x="600" dy="0">CHURCH</tspan><tspan x="600" dy="65">&amp; STATE</tspan>
+      <tspan x="600" dy="0">CHURCH</tspan><tspan x="600" dy="46">&amp; STATE</tspan>
     </text>
     </g>
   </g>

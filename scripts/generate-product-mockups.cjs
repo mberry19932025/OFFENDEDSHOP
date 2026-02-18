@@ -375,7 +375,86 @@ const renderRescueCross = ({ x, y, size, color, shirtColor }) => {
         letter-spacing="0.04em"
       >OH</text>
     </g>
-	  `.trim();
+		  `.trim();
+};
+
+const renderSpermCell = ({ x, y, size, color, angle = 0, opacity = 0.9 }) => {
+  const headR = size * 0.18;
+  const tailLen = size * 0.72;
+  const tailX = -size * 0.44;
+  const stroke = Math.max(2.2, size * 0.075);
+  return `
+    <g transform="translate(${x} ${y}) rotate(${angle})" opacity="${opacity}">
+      <circle cx="0" cy="0" r="${headR}" fill="${color}" />
+      <path
+        d="M${tailX} ${-headR * 0.42}
+           C ${tailX + tailLen * 0.2} ${-size * 0.36},
+             ${tailX + tailLen * 0.48} ${size * 0.28},
+             ${tailX + tailLen * 0.78} ${-size * 0.02}
+           S ${tailX + tailLen * 1.04} ${-size * 0.34},
+             ${tailX + tailLen * 1.2} ${size * 0.08}"
+        fill="none"
+        stroke="${color}"
+        stroke-width="${stroke}"
+        stroke-linecap="round"
+      />
+    </g>
+  `.trim();
+};
+
+const renderSpermSwarm = ({ x, y, size, color, shirtColor }) => {
+  const faint = shirtColor === "white" ? 0.72 : 0.64;
+  const swarm = [
+    { x: x - size * 0.95, y: y - size * 0.4, size: size * 0.36, angle: -28, opacity: 0.9 },
+    { x: x - size * 0.6, y: y - size * 0.78, size: size * 0.28, angle: -8, opacity: 0.82 },
+    { x: x + size * 0.92, y: y - size * 0.54, size: size * 0.34, angle: 24, opacity: 0.9 },
+    { x: x + size * 0.56, y: y - size * 0.88, size: size * 0.26, angle: 44, opacity: 0.8 },
+    { x: x - size * 0.86, y: y + size * 0.08, size: size * 0.24, angle: -46, opacity: faint },
+    { x: x + size * 0.84, y: y + size * 0.12, size: size * 0.24, angle: 38, opacity: faint },
+  ];
+
+  return swarm
+    .map((cell) =>
+      renderSpermCell({
+        x: cell.x,
+        y: cell.y,
+        size: cell.size,
+        color,
+        angle: cell.angle,
+        opacity: cell.opacity,
+      })
+    )
+    .join("\n");
+};
+
+const renderPrintPanel = ({ x, y, width, height, shirtColor, accent }) => {
+  const rx = Math.min(width, height) * 0.11;
+  const inner = shirtColor === "white" ? "rgba(255,255,255,0.72)" : "rgba(1,4,16,0.58)";
+  const edge = shirtColor === "white" ? "rgba(0,0,0,0.16)" : "rgba(255,255,255,0.14)";
+  const glow = accent || (shirtColor === "white" ? "#111827" : "#8b5cf6");
+  return `
+    <rect
+      x="${x - width / 2}"
+      y="${y - height / 2}"
+      width="${width}"
+      height="${height}"
+      rx="${rx}"
+      fill="${inner}"
+      stroke="${edge}"
+      stroke-width="2.6"
+    />
+    <rect
+      x="${x - width / 2 + 10}"
+      y="${y - height / 2 + 10}"
+      width="${width - 20}"
+      height="${height - 20}"
+      rx="${Math.max(12, rx - 8)}"
+      fill="none"
+      stroke="${glow}"
+      stroke-width="3"
+      opacity="0.58"
+    />
+  `.trim();
 };
 
 const renderIconFrame = ({ size, shirtColor, accent }) => {
@@ -1301,28 +1380,34 @@ const posterLayoutForItemType = (itemType) => {
   if (itemType === "hat") return null;
   if (itemType === "hoodie" || itemType === "crewneck") {
     return {
-      topY: 305,
-      iconY: 455,
-      bottomY: 612,
-      frameSize: 250,
-      iconSize: 170,
+      panelY: 510,
+      panelW: 390,
+      panelH: 350,
+      topY: 428,
+      iconY: 508,
+      bottomY: 590,
+      frameSize: 144,
+      iconSize: 84,
     };
   }
 
   return {
-    topY: 300,
-    iconY: 450,
-    bottomY: 606,
-    frameSize: 238,
-    iconSize: 162,
+    panelY: 500,
+    panelW: 386,
+    panelH: 344,
+    topY: 420,
+    iconY: 498,
+    bottomY: 578,
+    frameSize: 140,
+    iconSize: 82,
   };
 };
 
 const posterFontSize = ({ itemType, lines }) => {
   const count = Array.isArray(lines) ? lines.length : 0;
-  const base = itemType === "hoodie" || itemType === "crewneck" ? 92 : 96;
-  if (count >= 3) return 62;
-  if (count === 2) return 74;
+  const base = itemType === "hoodie" || itemType === "crewneck" ? 62 : 64;
+  if (count >= 3) return 44;
+  if (count === 2) return 52;
   return base;
 };
 
@@ -1369,7 +1454,20 @@ const renderPosterPrint = ({
     </g>
   `.trim();
 
-  return [topMarkup, iconMarkup, bottomMarkup].filter(Boolean).join("\n");
+  const panelMarkup = `
+    <g filter="url(#printShadow)">
+      ${renderPrintPanel({
+        x,
+        y: layout.panelY,
+        width: layout.panelW,
+        height: layout.panelH,
+        shirtColor,
+        accent,
+      })}
+    </g>
+  `.trim();
+
+  return [panelMarkup, topMarkup, iconMarkup, bottomMarkup].filter(Boolean).join("\n");
 };
 
 const buildMockupSvg = ({
@@ -1435,6 +1533,17 @@ const buildMockupSvg = ({
         shirtColor,
       })
     : "";
+
+  const spermSwarmMarkup =
+    design?.motif === "spermSwarm" && hasEmblem && itemType !== "hat"
+      ? renderSpermSwarm({
+          x: 600,
+          y: 332,
+          size: 118,
+          color: printColor,
+          shirtColor,
+        })
+      : "";
 
   const iconLayout = (() => {
     if (itemType === "hat") {
@@ -1504,7 +1613,9 @@ const buildMockupSvg = ({
         weight: 800,
       });
 
-  const printMarkup = [stackIconMarkup, emblemMarkup, textMarkup].filter(Boolean).join("\n");
+  const printMarkup = [stackIconMarkup, spermSwarmMarkup, emblemMarkup, textMarkup]
+    .filter(Boolean)
+    .join("\n");
 
   return `
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
@@ -1733,7 +1844,7 @@ rows.forEach((row) => {
         ? {
             baseName: "oh-tee-spermdonor",
             lines: ["SPERM", "DONOR"],
-            design: null,
+            design: { motif: "spermSwarm", accent: "#dc2626" },
           }
         : {
             baseName: "oh-tee-orgasmdonor",

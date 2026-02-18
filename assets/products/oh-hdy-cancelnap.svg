@@ -51,62 +51,85 @@
     />
     <rect x="470" y="592" width="260" height="112" rx="56" fill="rgba(0,0,0,0.16)" opacity="0.55" />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="405"
+      y="335"
+      width="390"
+      height="350"
+      rx="38.5"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="415"
+      y="345"
+      width="370"
+      height="330"
+      rx="30.5"
+      fill="none"
+      stroke="#60a5fa"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="305"
+      y="428"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="92"
+      font-size="62"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">CANCEL ME,</tspan>
     </text>
-<g transform="translate(600 455)" filter="url(#printShadow)">
+<g transform="translate(600 508)" filter="url(#printShadow)">
       <rect
-      x="-125"
-      y="-125"
-      width="250"
-      height="250"
-      rx="45"
+      x="-72"
+      y="-72"
+      width="144"
+      height="144"
+      rx="25.919999999999998"
       fill="rgba(0,0,0,0.28)"
       stroke="#60a5fa"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#60a5fa"
-      stroke-width="12"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="pillow"
     >
       <rect
-            x="-73.1"
-            y="-49.3"
-            width="146.2"
-            height="98.6"
-            rx="37.4"
+            x="-36.12"
+            y="-24.36"
+            width="72.24"
+            height="48.72"
+            rx="18.48"
             fill="#60a5fa33"
             stroke="#60a5fa"
-            stroke-width="12"
+            stroke-width="6"
           />
           <path
-            d="M-40.936 -17.747999999999998 Q 0 0 40.936 -17.747999999999998"
+            d="M-20.2272 -8.769599999999999 Q 0 0 20.2272 -8.769599999999999"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="7"
+            stroke-width="4"
             opacity="0.9"
             stroke-linecap="round"
           />
           <text
-            x="32.163999999999994"
-            y="51.272"
+            x="15.8928"
+            y="25.3344"
             text-anchor="middle"
             font-family="Teko, Impact, Arial Black, sans-serif"
-            font-size="37"
+            font-size="18"
             font-weight="700"
             fill="#60a5fa"
             opacity="0.9"
@@ -115,10 +138,10 @@
     </g>
 <text
       x="600"
-      y="612"
+      y="590"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="92"
+      font-size="62"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"

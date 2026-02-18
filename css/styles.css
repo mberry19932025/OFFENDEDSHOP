@@ -1693,11 +1693,12 @@ main {
 .product-image {
   height: 180px;
   border-radius: var(--radius-md);
+  background-color: #ececf3;
   background-image: var(
     --product-photo,
     linear-gradient(135deg, rgba(139, 92, 246, 0.35), rgba(0, 0, 0, 0.12))
   );
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   display: grid;

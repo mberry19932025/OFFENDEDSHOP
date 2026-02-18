@@ -51,52 +51,75 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#8b5cf6"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">MAKE POLITICS</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#8b5cf6"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#8b5cf6"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="zzzMoon"
     >
       <path
-            d="M29.16 -29.16 A 29.16 29.16 0 1 0 29.16 29.16 A 20.9952 20.9952 0 1 1 29.16 -29.16 Z"
+            d="M14.76 -14.76 A 14.76 14.76 0 1 0 14.76 14.76 A 10.6272 10.6272 0 1 1 14.76 -14.76 Z"
             fill="#8b5cf633"
             stroke="#8b5cf6"
-            stroke-width="7"
+            stroke-width="4"
             opacity="0.9"
             fill-rule="evenodd"
           />
           <text
-            x="-9.719999999999999"
-            y="14.58"
+            x="-4.92"
+            y="7.38"
             text-anchor="middle"
             font-family="Teko, Impact, Arial Black, sans-serif"
-            font-size="52"
+            font-size="26"
             font-weight="800"
             fill="#8b5cf6"
             opacity="0.92"
@@ -106,10 +129,10 @@
     </g>
 <text
       x="600"
-      y="606"
+      y="578"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"

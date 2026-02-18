@@ -51,51 +51,74 @@
     />
     <rect x="470" y="592" width="260" height="112" rx="56" fill="rgba(0,0,0,0.16)" opacity="0.55" />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="405"
+      y="335"
+      width="390"
+      height="350"
+      rx="38.5"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="415"
+      y="345"
+      width="370"
+      height="330"
+      rx="30.5"
+      fill="none"
+      stroke="#fb7185"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="305"
+      y="428"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="92"
+      font-size="62"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">I CAME, I SAW,</tspan>
     </text>
-<g transform="translate(600 455)" filter="url(#printShadow)">
+<g transform="translate(600 508)" filter="url(#printShadow)">
       <rect
-      x="-125"
-      y="-125"
-      width="250"
-      height="250"
-      rx="45"
+      x="-72"
+      y="-72"
+      width="144"
+      height="144"
+      rx="25.919999999999998"
       fill="rgba(0,0,0,0.28)"
       stroke="#fb7185"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#fb7185"
-      stroke-width="12"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="explosion"
     >
       <polygon
-            points="74.80 0.00 35.57 11.56 60.51 43.97 21.98 30.26 23.11 71.14 0.00 37.40 -23.11 71.14 -21.98 30.26 -60.51 43.97 -35.57 11.56 -74.80 0.00 -35.57 -11.56 -60.51 -43.97 -21.98 -30.26 -23.11 -71.14 -0.00 -37.40 23.11 -71.14 21.98 -30.26 60.51 -43.97 35.57 -11.56"
+            points="36.96 0.00 17.58 5.71 29.90 21.72 10.86 14.95 11.42 35.15 0.00 18.48 -11.42 35.15 -10.86 14.95 -29.90 21.72 -17.58 5.71 -36.96 0.00 -17.58 -5.71 -29.90 -21.72 -10.86 -14.95 -11.42 -35.15 -0.00 -18.48 11.42 -35.15 10.86 -14.95 29.90 -21.72 17.58 -5.71"
             fill="#fb718533"
             stroke="#fb7185"
-            stroke-width="12"
+            stroke-width="6"
             stroke-linejoin="round"
           />
           <text
             x="0"
-            y="20"
+            y="10"
             text-anchor="middle"
             font-family="Teko, Impact, Arial Black, sans-serif"
-            font-size="51"
+            font-size="25"
             font-weight="800"
             fill="#fb7185"
             opacity="0.9"
@@ -104,10 +127,10 @@
     </g>
 <text
       x="600"
-      y="612"
+      y="590"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="92"
+      font-size="62"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"

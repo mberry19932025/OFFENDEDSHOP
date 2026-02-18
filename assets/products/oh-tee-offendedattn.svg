@@ -51,60 +51,83 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#38bdf8"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">IF YOU&apos;RE OFFENDED,</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#38bdf8"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#38bdf8"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="eye"
     >
       <path
-            d="M-72.9 0 Q 0 -74.52000000000001 72.9 0 Q 0 74.52000000000001 -72.9 0 Z"
+            d="M-36.9 0 Q 0 -37.72 36.9 0 Q 0 37.72 -36.9 0 Z"
             fill="#38bdf833"
             stroke="#38bdf8"
-            stroke-width="11"
+            stroke-width="6"
             stroke-linejoin="round"
           />
-          <circle cx="0" cy="0" r="22.680000000000003" fill="#38bdf8" opacity="0.9" />
-          <circle cx="-8.1" cy="-8.1" r="8.1" fill="#ffffff" opacity="0.65" />
+          <circle cx="0" cy="0" r="11.48" fill="#38bdf8" opacity="0.9" />
+          <circle cx="-4.1000000000000005" cy="-4.1000000000000005" r="4.1000000000000005" fill="#ffffff" opacity="0.65" />
     </g>
     </g>
 <text
       x="600"
-      y="573.5"
+      y="555"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="74"
+      font-size="52"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
-      <tspan x="600" dy="0">YOU&apos;RE PAYING</tspan><tspan x="600" dy="65">ATTENTION</tspan>
+      <tspan x="600" dy="0">YOU&apos;RE PAYING</tspan><tspan x="600" dy="46">ATTENTION</tspan>
     </text>
     </g>
   </g>

@@ -51,34 +51,57 @@
       opacity="0.9"
     />
     <g>
-      <text
+      <g filter="url(#printShadow)">
+      <rect
+      x="407"
+      y="328"
+      width="386"
+      height="344"
+      rx="37.84"
+      fill="rgba(1,4,16,0.58)"
+      stroke="rgba(255,255,255,0.14)"
+      stroke-width="2.6"
+    />
+    <rect
+      x="417"
+      y="338"
+      width="366"
+      height="324"
+      rx="29.840000000000003"
+      fill="none"
+      stroke="#60a5fa"
+      stroke-width="3"
+      opacity="0.58"
+    />
+    </g>
+<text
       x="600"
-      y="300"
+      y="420"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="96"
+      font-size="64"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
       <tspan x="600" dy="0">DEMOCRATS</tspan>
     </text>
-<g transform="translate(600 450)" filter="url(#printShadow)">
+<g transform="translate(600 498)" filter="url(#printShadow)">
       <rect
-      x="-119"
-      y="-119"
-      width="238"
-      height="238"
-      rx="42.839999999999996"
+      x="-70"
+      y="-70"
+      width="140"
+      height="140"
+      rx="25.2"
       fill="rgba(0,0,0,0.28)"
       stroke="#60a5fa"
-      stroke-width="5"
+      stroke-width="3"
       opacity="0.55"
     />
       <g
       fill="none"
       stroke="#60a5fa"
-      stroke-width="11"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-label="coin"
@@ -86,26 +109,26 @@
       <circle
             cx="0"
             cy="0"
-            r="68.03999999999999"
+            r="34.44"
             fill="#60a5fa33"
             stroke="#60a5fa"
-            stroke-width="11"
+            stroke-width="6"
           />
           <circle
             cx="0"
             cy="0"
-            r="45.36000000000001"
+            r="22.96"
             fill="none"
             stroke="#60a5fa"
-            stroke-width="8"
+            stroke-width="4"
             opacity="0.88"
           />
           <text
             x="0"
-            y="29"
+            y="15"
             text-anchor="middle"
             font-family="Teko, Impact, Arial Black, sans-serif"
-            font-size="84"
+            font-size="43"
             font-weight="800"
             fill="#60a5fa"
             opacity="0.92"
@@ -114,15 +137,15 @@
     </g>
 <text
       x="600"
-      y="573.5"
+      y="555"
       text-anchor="middle"
       font-family="Teko, Impact, Arial Black, sans-serif"
-      font-size="74"
+      font-size="52"
       font-weight="800"
       fill="#ffffff"
       letter-spacing="0.02em"
     >
-      <tspan x="600" dy="0">TAX IT</tspan><tspan x="600" dy="65">TIL IT BEHAVES</tspan>
+      <tspan x="600" dy="0">TAX IT</tspan><tspan x="600" dy="46">TIL IT BEHAVES</tspan>
     </text>
     </g>
   </g>
