@@ -320,6 +320,72 @@ const renderLongSleeveSilhouette = ({ shirtColor }) => {
   `.trim();
 };
 
+const renderBagSilhouette = ({ shirtColor }) => {
+  const isDark = shirtColor === "black";
+  const outline = isDark ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.18)";
+  const bodyFill = isDark ? "rgba(10,17,32,0.9)" : "rgba(255,255,255,0.64)";
+  const handleStroke = isDark ? "rgba(255,255,255,0.26)" : "rgba(0,0,0,0.24)";
+  const innerGloss = isDark ? "rgba(255,255,255,0.07)" : "rgba(255,255,255,0.42)";
+
+  return `
+    <path
+      d="M410 292
+         Q 412 248 452 248
+         H 748
+         Q 788 248 790 292
+         L 836 702
+         Q 842 752 792 752
+         H 408
+         Q 358 752 364 702
+         Z"
+      fill="${bodyFill}"
+      stroke="${outline}"
+      stroke-width="3"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M498 292 V 268
+         Q 498 212 554 212
+         H 646
+         Q 702 212 702 268
+         V 292"
+      fill="none"
+      stroke="${handleStroke}"
+      stroke-width="16"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M536 292 V 272
+         Q 536 244 564 244
+         H 636
+         Q 664 244 664 272
+         V 292"
+      fill="none"
+      stroke="${handleStroke}"
+      stroke-width="8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      opacity="0.78"
+    />
+    <path
+      d="M430 338 Q 598 376 770 332"
+      fill="none"
+      stroke="${innerGloss}"
+      stroke-width="18"
+      stroke-linecap="round"
+      opacity="0.55"
+    />
+    <path
+      d="M412 304 H 788"
+      fill="none"
+      stroke="${outline}"
+      stroke-width="2"
+      opacity="0.5"
+    />
+  `.trim();
+};
+
 const renderHatSilhouette = ({ shirtColor }) => {
   const outline =
     shirtColor === "white" ? "rgba(0,0,0,0.14)" : "rgba(255,255,255,0.12)";
@@ -1171,6 +1237,85 @@ const renderIcon = ({ kind, size, accent }) => {
           />
         `.trim();
       }
+      case "awarenessRibbon": {
+        return `
+          <path
+            d="M0 ${-half * 0.54}
+               C ${half * 0.4} ${-half * 0.54}, ${half * 0.48} ${-half * 0.06}, ${half * 0.14} ${half * 0.12}
+               L ${half * 0.34} ${half * 0.52}
+               L ${half * 0.08} ${half * 0.56}
+               L 0 ${half * 0.32}
+               L ${-half * 0.08} ${half * 0.56}
+               L ${-half * 0.34} ${half * 0.52}
+               L ${-half * 0.14} ${half * 0.12}
+               C ${-half * 0.48} ${-half * 0.06}, ${-half * 0.4} ${-half * 0.54}, 0 ${-half * 0.54} Z"
+            fill="${softFill}"
+            stroke="${stroke}"
+            stroke-width="${strokeWidth}"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M${-half * 0.1} ${half * 0.1} L ${half * 0.1} ${-half * 0.12}"
+            fill="none"
+            stroke="${stroke}"
+            stroke-width="${Math.max(4, Math.round(strokeWidth * 0.58))}"
+            opacity="0.85"
+            stroke-linecap="round"
+          />
+        `.trim();
+      }
+      case "agencyBadge": {
+        const badgeW = size * 0.78;
+        const badgeH = size * 0.92;
+        return `
+          <path
+            d="M0 ${-badgeH * 0.48}
+               L ${badgeW * 0.34} ${-badgeH * 0.38}
+               L ${badgeW * 0.46} 0
+               L 0 ${badgeH * 0.46}
+               L ${-badgeW * 0.46} 0
+               L ${-badgeW * 0.34} ${-badgeH * 0.38}
+               Z"
+            fill="${softFill}"
+            stroke="${stroke}"
+            stroke-width="${strokeWidth}"
+            stroke-linejoin="round"
+          />
+          <circle
+            cx="0"
+            cy="${-size * 0.06}"
+            r="${size * 0.16}"
+            fill="none"
+            stroke="${stroke}"
+            stroke-width="${Math.max(4, Math.round(strokeWidth * 0.68))}"
+          />
+          <path
+            d="M0 ${-size * 0.23}
+               L ${size * 0.05} ${-size * 0.08}
+               L ${size * 0.2} ${-size * 0.08}
+               L ${size * 0.08} ${size * 0.02}
+               L ${size * 0.12} ${size * 0.16}
+               L 0 ${size * 0.08}
+               L ${-size * 0.12} ${size * 0.16}
+               L ${-size * 0.08} ${size * 0.02}
+               L ${-size * 0.2} ${-size * 0.08}
+               L ${-size * 0.05} ${-size * 0.08}
+               Z"
+            fill="${softFill}"
+            stroke="${stroke}"
+            stroke-width="${Math.max(3, Math.round(strokeWidth * 0.5))}"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M${-size * 0.2} ${size * 0.24} H ${size * 0.2}"
+            fill="none"
+            stroke="${stroke}"
+            stroke-width="${Math.max(4, Math.round(strokeWidth * 0.58))}"
+            stroke-linecap="round"
+            opacity="0.9"
+          />
+        `.trim();
+      }
       case "podium": {
         const w = size * 0.68;
         const h = size * 0.56;
@@ -1390,6 +1535,18 @@ const posterLayoutForItemType = (itemType) => {
       iconSize: 84,
     };
   }
+  if (itemType === "bag") {
+    return {
+      panelY: 518,
+      panelW: 360,
+      panelH: 334,
+      topY: 440,
+      iconY: 520,
+      bottomY: 602,
+      frameSize: 136,
+      iconSize: 80,
+    };
+  }
 
   return {
     panelY: 500,
@@ -1405,6 +1562,11 @@ const posterLayoutForItemType = (itemType) => {
 
 const posterFontSize = ({ itemType, lines }) => {
   const count = Array.isArray(lines) ? lines.length : 0;
+  if (itemType === "bag") {
+    if (count >= 3) return 36;
+    if (count === 2) return 42;
+    return 48;
+  }
   const base = itemType === "hoodie" || itemType === "crewneck" ? 62 : 64;
   if (count >= 3) return 44;
   if (count === 2) return 52;
@@ -1491,14 +1653,17 @@ const buildMockupSvg = ({
       ? renderHatSilhouette({ shirtColor })
       : itemType === "hoodie"
         ? renderHoodieSilhouette({ shirtColor })
-        : itemType === "crewneck"
+      : itemType === "crewneck"
           ? renderCrewneckSilhouette({ shirtColor })
-          : itemType === "longsleeve"
+        : itemType === "longsleeve"
             ? renderLongSleeveSilhouette({ shirtColor })
+        : itemType === "bag"
+            ? renderBagSilhouette({ shirtColor })
         : renderTeeSilhouette({ shirtColor });
 
   const printArea = (() => {
     if (itemType === "hat") return { x: 600, y: 410 };
+    if (itemType === "bag") return { x: 600, y: 530 };
     if (itemType === "hoodie" || itemType === "crewneck") return { x: 600, y: 474 };
     return { x: 600, y: 470 };
   })();
@@ -1511,6 +1676,12 @@ const buildMockupSvg = ({
         return 58;
       }
       return lines.length >= 3 ? 52 : 62;
+    }
+    if (itemType === "bag") {
+      if (lines.length >= 4) return 46;
+      if (lines.length === 3) return 54;
+      if (lines.length === 2) return 62;
+      return 68;
     }
     if (lines.length >= 4) return 56;
     if (lines.length === 3) return 66;
@@ -1650,6 +1821,7 @@ const itemTypeFromId = (id) => {
   if (id.startsWith("OH-HDY-")) return "hoodie";
   if (id.startsWith("OH-CRW-")) return "crewneck";
   if (id.startsWith("OH-LS-")) return "longsleeve";
+  if (id.startsWith("OH-BAG-")) return "bag";
   return "tee";
 };
 
@@ -1659,6 +1831,8 @@ const buildDefaultLines = ({ id, title }) => {
   const wrap =
     itemType === "hat"
       ? { maxChars: 14, maxLines: 3 }
+      : itemType === "bag"
+        ? { maxChars: 14, maxLines: 4 }
       : { maxChars: 18, maxLines: 4 };
   return wrapText(base, wrap);
 };
@@ -1822,6 +1996,27 @@ const DESIGN_PRESETS = {
     topLines: ["COMEDY IS MY"],
     bottomLines: ["CARDIO"],
   },
+  SOBRIETYSTASH: {
+    template: "poster",
+    icon: "checkStamp",
+    accent: "#22c55e",
+    topLines: ["SOBRIETY"],
+    bottomLines: ["ONE DAY", "AT A TIME"],
+  },
+  ANOREXIAAWARE: {
+    template: "poster",
+    icon: "awarenessRibbon",
+    accent: "#ec4899",
+    topLines: ["ANOREXIA"],
+    bottomLines: ["AWARENESS", "RECOVERY MATTERS"],
+  },
+  DEALOGO: {
+    template: "poster",
+    icon: "agencyBadge",
+    accent: "#38bdf8",
+    topLines: ["D.E.A."],
+    bottomLines: ["DON'T EVEN ASK"],
+  },
 };
 
 const getDesignPreset = ({ id }) => {
@@ -1870,15 +2065,15 @@ rows.forEach((row) => {
     return;
   }
 
-	  const svg = buildMockupSvg({
-	    title,
-	    itemType,
-	    shirtColor: "black",
-	    printColor: "#ffffff",
-	    lines: buildDefaultLines({ id, title: row.title }),
-	    emblem: false,
-	    design,
-	  });
+  const svg = buildMockupSvg({
+    title,
+    itemType,
+    shirtColor: itemType === "bag" ? "white" : "black",
+    printColor: itemType === "bag" ? "#111827" : "#ffffff",
+    lines: buildDefaultLines({ id, title: row.title }),
+    emblem: false,
+    design,
+  });
 
   fs.writeFileSync(path.join(outDir, `${slug}.svg`), svg);
 });
