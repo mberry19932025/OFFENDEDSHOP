@@ -36,11 +36,11 @@ copy:
 - Feed URL (for scheduled refresh)
 - Logo/Cover URLs
 
-If you enable GitHub Pages for the current GitHub remote (`mberry19932025/STORYTAP-STUDIO`)
+If you enable GitHub Pages for the current GitHub remote (`mberry19932025/OFFENDEDSHOP`)
 the URLs typically look like:
 
-- Storefront: `https://mberry19932025.github.io/STORYTAP-STUDIO/`
-- Feed: `https://mberry19932025.github.io/STORYTAP-STUDIO/catalog/offendhop-facebook-marketplace-catalog.csv`
+- Storefront: `https://mberry19932025.github.io/OFFENDEDSHOP/`
+- Feed: `https://mberry19932025.github.io/OFFENDEDSHOP/catalog/offendhop-facebook-marketplace-catalog.csv`
 
 ## Re-render PNGs (optional)
 
