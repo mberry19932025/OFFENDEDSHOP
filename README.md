@@ -42,6 +42,11 @@ the URLs typically look like:
 - Storefront: `https://mberry19932025.github.io/OFFENDEDSHOP/`
 - Feed: `https://mberry19932025.github.io/OFFENDEDSHOP/catalog/offendhop-facebook-marketplace-catalog.csv`
 
+If GitHub Pages isn’t enabled yet, you can still import a temporary feed (images
+served from GitHub raw):
+
+- Temporary feed: `https://raw.githubusercontent.com/mberry19932025/OFFENDEDSHOP/main/catalog/offendhop-facebook-marketplace-catalog-rawgithub.csv`
+
 ## Re-render PNGs (optional)
 
 If you edit the SVGs, regenerate PNGs with:

@@ -13,7 +13,12 @@ This repo includes a starter catalog feed you can import into Meta Commerce Mana
 
 1. Open **Commerce Manager**.
 2. Create a **Catalog** (type: **Ecommerce**).
-3. Add items via **Data Feed** and upload the CSV from this repo.
+3. Add items via **Data Feed** and use one of these feeds:
+
+   - **Recommended (GitHub Pages)**:
+     `https://mberry19932025.github.io/OFFENDEDSHOP/catalog/offendhop-facebook-marketplace-catalog.csv`
+   - **Temporary (works before Pages is enabled)**:
+     `https://raw.githubusercontent.com/mberry19932025/OFFENDEDSHOP/main/catalog/offendhop-facebook-marketplace-catalog-rawgithub.csv`
 
 When your site is live, you can also host the CSV at a public URL (ex:
 `https://mberry19932025.github.io/OFFENDEDSHOP/catalog/offendhop-facebook-marketplace-catalog.csv`)
@@ -38,6 +43,13 @@ This repo’s starter CSV is pre-wired for GitHub Pages under
 `https://mberry19932025.github.io/OFFENDEDSHOP/`. If you move to a custom domain or
 different host, bulk-replace the base URL in `link` and `image_link`, then re-upload
 or refresh the feed.
+
+If you haven’t enabled GitHub Pages yet, use the **temporary** feed file:
+
+- `catalog/offendhop-facebook-marketplace-catalog-rawgithub.csv`
+
+It points images at `raw.githubusercontent.com` and uses the GitHub repo link until
+your storefront URL is live.
 
 ## 5) Upload visuals (optional, but recommended)
 
